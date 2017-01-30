@@ -1,7 +1,8 @@
 {
   "name": "jira-inflow-outflow-generator",
   "version": "0.0.2",
-  "description": "",
+  "description": "Jira inflow/outflow chart generator",
+  "homepage": "https://github.com/ewyler/jira-inflow-outflow-generator",
   "main": "index.js",
   "author": "Eric Wyler <ewyler@gmail.com>",
   "license": "ISC",
