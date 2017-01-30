@@ -21,14 +21,14 @@ class JiraInflowOutflowGenerator {
 
     renderPage(title, upToDaysAgo, inflowJql, outflowJql) {
         const inflowPromise = this._countItems(
-            `${ inflowJql } AND createdDate > -${ daysAgo }d`,
-            daysAgo,
+            `${ inflowJql } AND createdDate > -${ upToDaysAgo }d`,
+            upToDaysAgo,
             item => new Date(item.fields.created)
         );
 
         const outflowPromise = this._countItems(
-            `${ outflowJql } AND resolutiondate > -${ daysAgo }d`,
-            daysAgo,
+            `${ outflowJql } AND resolutiondate > -${ upToDaysAgo }d`,
+            upToDaysAgo,
             item => new Date(item.fields.resolutiondate)
         );
 
