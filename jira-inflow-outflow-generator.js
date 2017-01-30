@@ -19,7 +19,7 @@ class JiraInflowOutflowGenerator {
         this._jira = new JiraApi(options);
     }
 
-    renderPage(title, daysAgo, inflowJql, outflowJql) {
+    renderPage(title, upToDaysAgo, inflowJql, outflowJql) {
         const inflowPromise = this._countItems(
             `${ inflowJql } AND createdDate > -${ daysAgo }d`,
             daysAgo,
@@ -39,7 +39,7 @@ class JiraInflowOutflowGenerator {
                     ['Date', 'Inflow', 'Outflow']
                 ];
 
-                for (const daysAgo of _.range(0, DAYS_AGO).reverse()) {
+                for (const daysAgo of _.range(0, upToDaysAgo).reverse()) {
                     const date = new Date(today);
                     date.setDate(date.getDate() - daysAgo);
 
