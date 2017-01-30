@@ -7,7 +7,6 @@
   "author": "Eric Wyler <ewyler@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "4.14.0",
     "jira-client": "4.2.0",
     "underscore": "1.8.3"
   }
