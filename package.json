@@ -1,11 +1,15 @@
 {
   "name": "jira-inflow-outflow-generator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Jira inflow/outflow chart generator",
   "homepage": "https://github.com/ewyler/jira-inflow-outflow-generator",
   "main": "index.js",
   "author": "Eric Wyler <ewyler@gmail.com>",
   "license": "ISC",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/ewyler/jira-inflow-outflow-generator"
+  },
   "dependencies": {
     "jira-client": "4.2.0",
     "underscore": "1.8.3"
