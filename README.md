@@ -9,7 +9,7 @@ Inflow is determined by `createdDate` in the JQL. Outflow is determined via `res
 * Timezones might still be a little weird.
 * I'm not sure that Jira resets `resolutiondate` if an item transitions from a resolved state to a non-closed state.
 
-#Example usage:
+# Example usage:
 
 ```
 const express = require('express');
